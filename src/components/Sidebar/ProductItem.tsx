@@ -2,15 +2,14 @@ import React from 'react'
 
 import { Items } from '../../interfaces/ICategories';
 import { Loader } from '../shared/Loader';
-import tw, {css} from 'twin.macro';
+import tw from 'twin.macro';
 import { 
 	ProductContainer,
 	ProductLabel,
-	ProductImg
+	ProductImg,
+	ImgLoaderContainer,
+	ImgLoaderFail
 } from './SidebarStyles';
-
-const ImgLoaderContainer = tw.div`h-full w-full flex justify-center items-center`
-const ImgLoaderFail = tw.div`h-40 w-40 flex justify-center items-center bg-gray-100 text-gray-400 text-sm text-center font-medium`
 
 const ProductItem = ({name, img}:Items) => {
 	const [isLoading, setIsLoading] = React.useState<boolean>(true)

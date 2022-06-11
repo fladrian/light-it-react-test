@@ -17,19 +17,26 @@ after:absolute after:top-[-8%] after:h-[18px] after:w-full after:rounded-r-full 
 export const NavigationDrawer = tw.aside`w-[40%] h-screen bg-gray-100 absolute top-0 left-24 text-black pt-24 px-6`
 
 export const ChevronIconLeft = tw.img`w-4 h-4 mx-auto`
-export const CloseDrawerBtn = tw.button`w-6 h-24 absolute right-[-4%] bg-gray-100 rounded-tr-full rounded-br-full top-72`
+export const CloseDrawerBtn = tw.button`w-6 h-24 absolute right-[-6%] bg-gray-100 rounded-tr-full rounded-br-full top-72
+
+md:right-[-8%] overscroll-y-contain
+lg:right-[-4%]
+xl:right-[-3%]`
 
 export const ChevronIconRight = tw(ChevronIconLeft)`rotate-180 mr-0`
 
 export const DrawerItemContainer = tw.div`flex justify-between items-center mx-auto bg-white px-4 py-2 rounded-xl mb-2 cursor-pointer hover:bg-gray-300 transition-colors duration-300`
 
-export const NavigationDrawerProducts = tw(NavigationDrawer)``
-export const ProductImg = tw.img`w-40 h-40 rounded-md object-cover`
+export const NavigationDrawerProducts = tw(NavigationDrawer)`overflow-auto`
+export const ProductImg = tw.img`w-32 h-32 rounded-md object-cover`
 export const ProductLabel = tw(MenuItemLabel)`text-sm pt-1 font-light text-gray-900 border rounded-b-lg bg-gray-200 mt-[-4px]`
-export const ProductContainer = tw.article`hover:scale-95 transition duration-300 cursor-pointer h-20`
-export const ProductsContainer = tw.article`flex justify-around`
+export const ProductContainer = tw.article`hover:scale-95 transition duration-300 cursor-pointer pb-4`
+export const ProductsContainer = tw.article`flex gap-2 flex-wrap justify-around`
 export const ProductBadge = tw.div`font-light text-xs px-0 cursor-pointer text-gray-400 flex w-10 h-5 flex items-center hover:underline`
 export const ChevronBadge = tw(ChevronIconLeft)`w-3 h-3 mr-1`
 
 export const CategoryTitle = tw.h2`text-gray-600 text-xl mb-3 font-bold flex justify-between items-center`
 export const CategoryLabel = tw.h2`text-gray-500 font-normal`
+
+export const ImgLoaderContainer = tw.div`h-full w-full flex justify-center items-center`
+export const ImgLoaderFail = tw.div`h-40 w-40 flex justify-center items-center bg-gray-100 text-gray-400 text-sm text-center font-medium`

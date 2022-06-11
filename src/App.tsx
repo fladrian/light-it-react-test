@@ -8,7 +8,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<main tw='bg-gray-200 h-screen'>
+			<main tw='bg-gray-200'>
 				<SideMenu />
 				<ActionButtons />
 			</main>
