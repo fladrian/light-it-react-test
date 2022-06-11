@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import Header from './components/shared/Header';
-import SideMenu from './components/shared/SideBar';
-import ActionButtons from './components/shared/ActionButtons';
+import Header from './components/Header/Header';
+import SideMenu from './components/Sidebar/Sidebar';
+import ActionButtons from './components/ActionButtons/ActionButtons';
 import tw from 'twin.macro';
-
-import { GetApertures } from './services/aperture.services';
-
-import axios from 'axios'
 
 function App() {
 	return (
