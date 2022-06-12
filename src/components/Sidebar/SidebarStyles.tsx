@@ -6,7 +6,7 @@ export const MenuItemImg = tw.img`w-7 h-7 mx-auto`
 export const MenuItemLabel = tw.p`text-center text-gray-500 text-xs`
 
 export const MenuItemContainer = styled.article<{ isActive: boolean }>`
-${tw`flex flex-col justify-center items-center cursor-pointer w-full h-20`}
+${tw`flex flex-col justify-center items-center cursor-pointer w-full h-20 hover:font-semibold`}
 ${({ isActive }) => isActive && tw`bg-gray-100 relative rounded-lg
 
 before:absolute before:bottom-[-12%] before:h-[18px] before:w-full before:rounded-r-full before:bg-white before:left-0
