@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 
-export const HeaderSection = tw.section`flex flex-col items-center px-40 z-10 absolute w-[100%] justify-center bg-gray-900 text-white h-20
+export const HeaderSection = tw.section`flex flex-col items-center px-40 z-10 absolute w-[100%] justify-center bg-gray-900 text-white h-20 border-b border-blue-400 border-b-4
 
 md:flex md:flex-row md:justify-between md:items-center`
 
