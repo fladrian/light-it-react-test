@@ -40,3 +40,5 @@ export const CategoryLabel = tw.h2`text-gray-500 font-normal`
 
 export const ImgLoaderContainer = tw.div`h-full w-full flex justify-center items-center`
 export const ImgLoaderFail = tw.div`h-32 w-32 flex justify-center items-center bg-gray-100 text-gray-400 text-sm text-center font-medium`
+
+export const ButtonsContainer = tw.div`absolute right-4 w-60 h-14 top-24 flex justify-evenly items-center gap-2`
