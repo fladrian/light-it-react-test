@@ -39,4 +39,4 @@ export const CategoryTitle = tw.h2`text-gray-600 text-xl mb-3 font-bold flex jus
 export const CategoryLabel = tw.h2`text-gray-500 font-normal`
 
 export const ImgLoaderContainer = tw.div`h-full w-full flex justify-center items-center`
-export const ImgLoaderFail = tw.div`h-40 w-40 flex justify-center items-center bg-gray-100 text-gray-400 text-sm text-center font-medium`
+export const ImgLoaderFail = tw.div`h-32 w-32 flex justify-center items-center bg-gray-100 text-gray-400 text-sm text-center font-medium`
