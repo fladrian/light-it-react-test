@@ -6,28 +6,22 @@ import {
 	HeaderImg
 } from './HeaderStyles';
 
-const options = [
-  { value: '#', label: 'Guardar y salir' },
-  { value: '#', label: 'Salir sin guardar' },
-  { value: '#', label: 'Guardar y continuar' }
-]
+import { selectOptions } from '../../constants/SelectItems';
 
 
-const Header = () => {
-	return (
+const Header = () => (
 		<HeaderSection>
 			<div>
 				<HeaderImg src={logo}/>
 			</div>
 			<div>
-				<HeaderSelect name="" id="">
-					{options.map(({value, label}, index) => (
+				<HeaderSelect>
+					{selectOptions.map(({value, label}, index) => (
 						<option key={index} value={value}>{label}</option>
 					))}
 				</HeaderSelect>
 			</div>
 		</HeaderSection>
-	)
-}
+)
 
 export default Header
