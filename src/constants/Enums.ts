@@ -8,7 +8,7 @@ export enum ArrowButtonActions {
 	UP 		= 'UP',
 	DOWN 	= 'DOWN',
 	LEFT 	= 'LEFT',
-	RIGHT = 'LEFT',
+	RIGHT = 'RIGHT',
 }
 
 export enum ToastPosition {
