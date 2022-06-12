@@ -34,7 +34,9 @@ import ProductList from './ProductList';
 import CategoryList from './CategoryList';
 import MenuList from './MenuList';
 import Button from '../shared/Button';
-import tw from 'twin.macro';
+
+// external libraries
+import toast, { Toaster } from 'react-hot-toast';
 
 const SideMenu = () => {
 	const [currentMenuItem, setCurrentMenuItem] = React.useState<string>();
@@ -95,6 +97,7 @@ const SideMenu = () => {
 
 	return (
 		<>
+			<Toaster />
 			<SideMenuContainer>
 				<MenuList
 					menuOptions={menuOptions}

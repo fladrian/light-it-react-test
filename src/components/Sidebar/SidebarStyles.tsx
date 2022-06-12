@@ -14,14 +14,10 @@ before:absolute before:bottom-[-12%] before:h-[18px] before:w-full before:rounde
 after:absolute after:top-[-8%] after:h-[18px] after:w-full after:rounded-r-full after:bg-white`};
 `
 
-export const NavigationDrawer = tw.aside`w-[40%] h-screen bg-gray-100 absolute top-0 left-24 text-black pt-24 px-6`
+export const NavigationDrawer = tw.aside`w-[34%] h-screen bg-gray-100 absolute top-0 left-24 text-black pt-24 px-6`
 
 export const ChevronIconLeft = tw.img`w-4 h-4 mx-auto`
-export const CloseDrawerBtn = tw.button`w-6 h-24 absolute right-[-6%] bg-gray-100 rounded-tr-full rounded-br-full top-72
-
-md:right-[-8%] overscroll-y-contain
-lg:right-[-4%]
-xl:right-[-3%]`
+export const CloseDrawerBtn = tw.button`w-6 h-24 absolute right-[-20px] bg-gray-100 rounded-tr-full rounded-br-full top-72 overscroll-y-contain`
 
 export const ChevronIconRight = tw(ChevronIconLeft)`rotate-180 mr-0`
 
@@ -41,4 +37,6 @@ export const CategoryLabel = tw.h2`text-gray-500 font-normal`
 export const ImgLoaderContainer = tw.div`h-full w-full flex justify-center items-center`
 export const ImgLoaderFail = tw.div`h-32 w-32 flex justify-center items-center bg-gray-100 text-gray-400 text-sm text-center font-medium`
 
-export const ButtonsContainer = tw.div`absolute right-4 w-60 h-14 top-24 flex justify-evenly items-center gap-2`
+export const ButtonsContainer = tw.div`absolute right-2 w-32 h-14 top-24 flex flex-col justify-evenly items-center gap-2
+
+sm:flex sm:flex-row sm:w-60 sm:right-4`
