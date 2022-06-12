@@ -11,6 +11,9 @@ import {
 	LeftRightBtnContainer
 } from './ActionButtonsStyles';
 
+// constants
+import { ArrowButtonActions, ToastPosition } from '../../constants/Enums';
+
 // external libraries
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -20,16 +23,16 @@ const ActionButtons = () => {
 
 	const _getToastPosition = (arrowAction:ArrowAction) => {
 		switch (arrowAction) {
-			case 'UP':
-				return 'top-center'	
-			case 'DOWN':
-				return 'bottom-center'	
-			case 'LEFT':
-				return 'top-left'	
-			case 'RIGHT':
-				return 'top-right'
+			case ArrowButtonActions.UP:
+				return ToastPosition['TOP-CENTER']
+			case ArrowButtonActions.DOWN:
+				return ToastPosition['BOTTOM-CENTER']	
+			case ArrowButtonActions.LEFT:
+				return ToastPosition['TOP-LEFT']
+			case ArrowButtonActions.RIGHT:
+				return ToastPosition['TOP-RIGHT']
 			default:
-				return 'bottom-right'
+				return ToastPosition.DEFAULT
 		}
 	}
 
