@@ -6,7 +6,7 @@ export const ActionBtnAddSubstract = tw.article`bg-white h-20 w-8 rounded-md fle
 export const ActionBtnArrowsContainer = tw.section`bg-white h-20 w-20 rounded-md flex flex-col justify-around items-center p-1`
 
 export const ArrowBtnIcon = styled.img<{ direction?: string }>`
-${tw`w-6 h-6 cursor-pointer cursor-pointer hover:bg-gray-200 rounded-md`}
+${tw`w-6 h-6 cursor-pointer hover:bg-gray-200 rounded-md`}
 ${({ direction }) => direction === 'right' && tw`rotate-90`}
 ${({ direction }) => direction === 'down' && tw`rotate-180`}
 ${({ direction }) => direction === 'left' && tw`rotate-[-90deg]`}
