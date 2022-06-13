@@ -1,8 +1,7 @@
 # light-it-react-test
 
 # Prueba técnica realizada en React
-#### La aplicación utiliza variables de entorno para consumir servicios
-
+#### La aplicación utiliza variables de entorno para almacenar la base-url
 ## Para correr la aplicación
 ##### `1 - Clonar el repositorio en local`
 ##### `2 - npm install`
