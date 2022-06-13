@@ -13,6 +13,7 @@ Al correr la aplicación en local puedes acceder por el navegador web mediante l
 
 ## Técnologias/Librerias utilizadas
 - React
+- TypeScript
 - Vite
 - Tailwind
 - Twin.macro
